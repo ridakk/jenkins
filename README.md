@@ -4,7 +4,7 @@ jenkins scripts, pipelines and Dockerfile
 
 ## Custom Dockerfile
 
-Dockerfile and neccessary files to build a custom dokcer image.
+Dockerfile and neccessary files to build a custom docker image.
 
 See [build](build) folder.
 

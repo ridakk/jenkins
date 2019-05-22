@@ -1,7 +1,5 @@
 # build
 
-Dockerfile and neccessary files to build a custom dokcer image.
-
 - copy your groovy scripts and Jenkins pipeline files under `groovy` and `pipelines` folder.
 - update [plugins list](plugins.txt) if you added or removed any plugin.
 
