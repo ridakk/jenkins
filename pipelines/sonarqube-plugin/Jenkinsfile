@@ -1,0 +1,13 @@
+node {
+  stage('SCM') {
+    cleanWs()
+    git 'https://github.com/ridakk/jenkins'
+  }
+
+  stage('SonarQube analysis') {
+    def scannerHome = tool 'SonarQube Scanner 2.8';
+    withSonarQubeEnv('sonarqube') {
+      sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=jenkins-repo -Dsonar.sources=."
+    }
+  }
+}
